@@ -1,0 +1,57 @@
+/* =========================================================
+   DEZYNVIA — Responsive rules (mobile-first: base styles are
+   for phones; these add layout for larger screens)
+   ========================================================= */
+
+/* Tablets (>= 640px) */
+@media (min-width: 640px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-5 { grid-template-columns: repeat(2, 1fr); }
+  .modal-gallery { grid-template-columns: repeat(2, 1fr); }
+  .detail-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .form-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+}
+
+/* Small laptops (>= 900px): show the desktop navigation */
+@media (min-width: 900px) {
+  .nav-toggle { display: none; }
+  .nav-menu {
+    position: static; display: flex; flex-direction: row; align-items: center; gap: .2rem;
+    padding: 0; background: none; border: 0; max-height: none; overflow: visible;
+  }
+  .nav-menu a, .dropdown-toggle { width: auto; padding: .5rem .8rem; font-size: .95rem; }
+  .nav-cta { margin: 0 0 0 .6rem; }
+  .nav-menu a.btn { color: var(--white); }
+  .dropdown {
+    position: absolute; top: 100%; left: 0; min-width: 250px; padding: .5rem;
+    background: var(--navy-800); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+  }
+  .has-dropdown:hover .dropdown, .has-dropdown.is-open .dropdown { display: flex; }
+
+  .hero-inner { grid-template-columns: 1.1fr .9fr; }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .grid-5 { grid-template-columns: repeat(3, 1fr); }
+  .contact-layout { grid-template-columns: 1fr 1.4fr; }
+  .footer-grid { grid-template-columns: 1.6fr 1fr 1.2fr 1fr; }
+  .steps { grid-template-columns: repeat(4, 1fr); }
+  .step { padding: 4rem 0 0; }
+  .step::before { top: 0; }
+  .step::after { left: 56px; top: 23px; bottom: auto; width: calc(100% - 64px); height: 2px; }
+}
+
+/* Large desktops (>= 1200px) */
+@media (min-width: 1200px) {
+  .grid-5 { grid-template-columns: repeat(5, 1fr); }
+  .section { padding: var(--space-9) 0; }
+}
+
+/* Very small phones (< 380px) */
+@media (max-width: 379px) {
+  .btn { width: 100%; }
+  .float-card { display: none; }
+}

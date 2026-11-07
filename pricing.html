@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | Dezynvia</title>
+  <meta name="description" content="Flexible Dezynvia packages for web development, WordPress, graphic design, social media design and Shopify product listing. Contact us for a quotation.">
+  <meta name="theme-color" content="#0a1128">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dezynvia">
+  <meta property="og:title" content="Pricing | Dezynvia">
+  <meta property="og:description" content="Flexible Dezynvia packages for web development, WordPress, graphic design, social media design and Shopify product listing. Contact us for a quotation.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="animations.css">
+  <style>
+    /* Typography: Inter. Headings 700/800, buttons and small cards 500, body 400 */
+    body, input, select, textarea, button { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 400; }
+    h1, h2 { font-family: 'Inter', system-ui, sans-serif; font-weight: 800; letter-spacing: -0.02em; }
+    h3, h4 { font-family: 'Inter', system-ui, sans-serif; font-weight: 700; }
+    .btn, .nav-menu a, .dropdown-toggle, .social-links a { font-family: 'Inter', system-ui, sans-serif; font-weight: 500; }
+    .notice { font-weight: 400; }
+    .notice strong { font-weight: 700; }
+
+    /* Package cards */
+    .price-card.card { padding: 0; overflow: hidden; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease; }
+    .price-card.card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(10,17,40,.14); }
+    .pc-media {
+      position: relative; color: #fff; min-height: 180px; padding: 2.75rem 1.5rem 1.25rem;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      background-color: #0a1128;
+      background-image: linear-gradient(180deg, rgba(10,17,40,.25) 0%, rgba(10,17,40,.9) 100%), var(--img), linear-gradient(135deg, #0a1128, #3b4cca);
+      background-size: cover; background-position: center;
+    }
+    .pos-2 .pc-media { background-position: 30% center; }
+    .pos-3 .pc-media { background-position: 70% center; }
+    .pc-media h3 { color: #fff; font-size: 1.4rem; font-weight: 800; margin: 0 0 .3rem; letter-spacing: -0.01em; }
+    .pc-media p { color: rgba(255,255,255,.88); font-weight: 400; font-size: .95rem; margin: 0; }
+    .pc-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+    .pc-body .price { margin: 0 0 1.1rem; }
+    .price-text { display: inline-block; font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; }
+    .pc-body h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; margin: 0 0 .6rem; opacity: .75; }
+    .pc-body .check-list { margin: 0 0 1.5rem; font-weight: 400; }
+    .pc-body .check-list li { margin-bottom: .5rem; }
+    .pc-body .btn { margin-top: auto; align-self: flex-start; }
+    .price-group > h2 { margin-bottom: 1.5rem; }
+
+    /* Bottom call-to-action box */
+    .cta h2 { font-weight: 800; letter-spacing: -0.02em; }
+    .cta p { font-weight: 400; }
+    .cta .btn { font-weight: 500; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="Dezynvia home"><img src="main-logo-dezynvia.png" alt="Dezynvia" class="logo-image" style="height:48px;width:auto;max-width:190px;object-fit:contain;display:block;"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="has-dropdown">
+        <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">Services &#9662;</button>
+        <div class="dropdown">
+          <a href="services.html">All Services</a>
+          <a href="web-development.html">Web Development</a>
+          <a href="wordpress-development.html">WordPress Development</a>
+          <a href="graphic-design.html">Graphic Designing</a>
+          <a href="social-media-design.html">Social Media Post Designing</a>
+          <a href="shopify-product-listing.html">Shopify Product Listing</a>
+        </div>
+      </div>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm nav-cta" href="contact.html">Get a Free Quote</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Pricing</p>
+    <h1>Pricing and Packages</h1>
+    <p>Every project is different, so packages are customised to your needs. Contact us for a tailored quotation.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="notice reveal" style="margin-bottom:2.5rem"><strong>Extra costs:</strong> domains, hosting, paid plugins and themes, third-party subscriptions and ongoing support may involve additional costs if they are not included in your quotation. Prices and delivery times are confirmed in writing before work begins.</div>
+    <div class="price-group">
+      <h2 class="reveal"><span aria-hidden="true">🌐 </span>Website Development</h2>
+      <div class="grid grid-3">
+        <article class="card price-card reveal pos-1">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70')">
+            <h3>Basic Package</h3>
+            <p>A clean, single-page site to get you online.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Clean, single-page landing layout</li><li>Fully responsive mobile-friendly design</li><li>Basic HTML/CSS/Bootstrap clean structure</li><li>Contact form integration</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Web%20Development">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-2">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70')">
+            <h3>Business Package</h3>
+            <p>A professional multi-page site for a growing business.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Up to 5 professional custom pages</li><li>Dynamic interactive UI components (JavaScript)</li><li>Advanced custom design styling</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Web%20Development">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-3">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70')">
+            <h3>Premium Package</h3>
+            <p>A fully custom, high-performance build.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Unlimited custom pages &amp; complete layout design</li><li>High-performance framework implementation</li><li>Advanced logic structures &amp; animations</li><li>Premium 30-day ongoing post-launch maintenance</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Web%20Development">Get a Quote</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="price-group">
+      <h2 class="reveal"><span aria-hidden="true">📝 </span>WordPress Development</h2>
+      <div class="grid grid-3">
+        <article class="card price-card reveal pos-1">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=900&q=70')">
+            <h3>Starter Package</h3>
+            <p>A simple, well-configured WordPress website.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Complete WordPress installation and theme configuration</li><li>Elementor/Page-Builder simple layout mapping</li><li>Essential plugins configuration (SEO &amp; Security)</li><li>3 functional core site pages</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=WordPress%20Development">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-2">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=900&q=70')">
+            <h3>Professional Package</h3>
+            <p>A custom WordPress site with online selling.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Fully customized WordPress site design</li><li>E-commerce functionality setup (WooCommerce)</li><li>Payment gateway &amp; email subscription routing</li><li>Up to 10 highly optimized page layouts</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=WordPress%20Development">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-3">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=900&q=70')">
+            <h3>Advanced Package</h3>
+            <p>A high-performance, feature-rich WordPress build.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Custom dynamic functionality &amp; membership system options</li><li>High-tier site speed optimization &amp; caching setup</li><li>Complete custom product page mapping &amp; configurations</li><li>Extended premium plugin setup &amp; 1-month maintenance</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=WordPress%20Development">Get a Quote</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="price-group">
+      <h2 class="reveal"><span aria-hidden="true">🎨 </span>Graphic Design</h2>
+      <div class="grid grid-3">
+        <article class="card price-card reveal pos-1">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=70')">
+            <h3>Single Design</h3>
+            <p>One polished, custom graphic.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>1 high-resolution custom graphic asset</li><li>Tailored color palette and typography match</li><li>Provided in multiple file choices (PNG, JPG, SVG)</li><li>Includes 2 revision rounds</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Graphic%20Designing">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-2">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=70')">
+            <h3>Design Bundle</h3>
+            <p>A matching set of designs for your brand.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>5 customized graphics for matching brand themes</li><li>Perfect scaling layouts for cross-platform delivery</li><li>Layered vector source files included (AI/PSD)</li><li>Includes 4 extensive revision rounds</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Graphic%20Designing">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-3">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=70')">
+            <h3>Elite Package</h3>
+            <p>A complete visual identity toolkit.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Comprehensive brand visual toolkit design</li><li>Custom logos, banners, icons, and asset standards</li><li>Priority fast-track production delivery</li><li>Unlimited structural layout modifications</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Graphic%20Designing">Get a Quote</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="price-group">
+      <h2 class="reveal"><span aria-hidden="true">📱 </span>Social Media Design</h2>
+      <div class="grid grid-3">
+        <article class="card price-card reveal pos-1">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=900&q=70')">
+            <h3>Weekly Pack</h3>
+            <p>Fresh creatives for your week.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>3 tailor-made premium social feed creatives</li><li>Engaging platform-optimized layout styling</li><li>High-conversion hooks text placement suggestions</li><li>Rapid 48-hour delivery timeline</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Social%20Media%20Post%20Designing">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-2">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=900&q=70')">
+            <h3>Monthly Pack</h3>
+            <p>A unified feed for the whole month.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>12 custom feed posts arranged for a unified layout grid</li><li>Targeted visual campaign concepts and story frames</li><li>Custom platform sizes included (Instagram, Facebook, LinkedIn)</li><li>Mid-month adjustment revision checkpoints</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Social%20Media%20Post%20Designing">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-3">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=900&q=70')">
+            <h3>Monthly Creative Pack</h3>
+            <p>Full creative support across every profile.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>20 premium layout posts + 8 synchronized vertical video/reels covers</li><li>Complete strategic visual branding across all profiles</li><li>Source layout templates shared directly (Canva/Figma links)</li><li>Full dedicated monthly asset consulting support</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Social%20Media%20Post%20Designing">Get a Quote</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="price-group">
+      <h2 class="reveal"><span aria-hidden="true">🛒 </span>Shopify Product Listing</h2>
+      <div class="grid grid-3">
+        <article class="card price-card reveal pos-1">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=70')">
+            <h3>Per Product</h3>
+            <p>Pay-per-product entry.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Title and description formatting</li><li>Image organisation and variant entry</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Shopify%20Product%20Listing">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-2">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=70')">
+            <h3>Product Bundle</h3>
+            <p>A set of products.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Products listed as a batch</li><li>Collections and categories</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Shopify%20Product%20Listing">Get a Quote</a>
+          </div>
+        </article>
+        <article class="card price-card reveal pos-3">
+          <div class="pc-media" style="--img:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=70')">
+            <h3>Bulk Listing</h3>
+            <p>Large catalogues.</p>
+          </div>
+          <div class="pc-body">
+            <div class="price"><span class="price-text">Contact for Pricing</span></div>
+            <h4>What's included</h4>
+            <ul class="check-list"><li>Bulk product data entry</li><li>Organised collections</li><li>Consistent product formatting</li></ul>
+            <a class="btn btn-primary" href="contact.html?service=Shopify%20Product%20Listing">Get a Quote</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Not sure which package fits?</h2>
+      <p>Describe your project and we will recommend a package and prepare a quotation.</p>
+      <div class="btn-row">
+        <a class="btn btn-light" href="contact.html">Get a Free Quote</a>
+        <a class="btn btn-ghost-light" href="contact.html">Contact Our Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Dezynvia home"><img src="main-logo-dezynvia.png" alt="Dezynvia" class="logo-image" style="height:48px;width:auto;max-width:190px;object-fit:contain;display:block;"></a>
+        <p style="margin-top:1rem">Dezynvia is a software house and digital creative agency. Design. Develop. Dominate.</p>
+        <div class="social-links" aria-label="Social media">
+          <a data-social="facebook">Facebook</a>
+          <a href="https://www.instagram.com/dezynvia11/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a data-social="linkedin">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="wordpress-development.html">WordPress Development</a></li>
+          <li><a href="graphic-design.html">Graphic Designing</a></li>
+          <li><a href="social-media-design.html">Social Media Post Designing</a></li>
+          <li><a href="shopify-product-listing.html">Shopify Product Listing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:syedshahmohammadzain@gmail.com">syedshahmohammadzain@gmail.com</a></li>
+          <li>Phone: <a href="tel:+923333318011">+92333-3318011</a></li>
+          <li>Address: <span>North Karachi, Karachi, Pakistan</span></li>
+          <li><a href="contact.html">Send us a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Dezynvia. All rights reserved.</span>
+      <span><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms and Conditions</a></span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923333318011?text=Hello%20Dezynvia%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat with Dezynvia on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
