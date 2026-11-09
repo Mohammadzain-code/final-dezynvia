@@ -29,7 +29,7 @@ window.DEZYNVIA_CONFIG = {
 
   // Social profile URLs. Leave "" for any you do not have; empty ones show as "coming soon".
   social: {
-    facebook: "",
+    facebook: "https://www.facebook.com/profile.php?id=61596078399588",
     instagram: "",
     linkedin: "",
     behance: "",
